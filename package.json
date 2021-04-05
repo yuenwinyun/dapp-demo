@@ -1,0 +1,21 @@
+{
+  "name": "dapp-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^3.0.0",
+    "lite-server": "^2.6.1",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1",
+    "truffle": "5.0.2",
+    "truffle-contract": "3.0.6",
+    "web3": "^0.20.1"
+  }
+}
