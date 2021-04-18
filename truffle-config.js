@@ -12,6 +12,9 @@ module.exports = {
                 enabled: true,
                 runs: 200,
             },
+            evmVersion: "petersburg",
         },
     },
+    contracts_directory: "./src/contracts/",
+    contracts_build_directory: "./src/abis/",
 };
