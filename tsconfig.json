@@ -1,15 +1,15 @@
 {
     "compilerOptions": {
         "baseUrl": ".",
-        "outDir": "build/dist",
+        "outDir": "build/client",
         "module": "esnext",
         "target": "es5",
         "lib": ["es6", "dom", "esnext.asynciterable"],
         "sourceMap": true,
         "allowJs": false,
-        "jsx": "react-jsx",
+        "jsx": "react",
         "moduleResolution": "node",
-        "rootDir": "src/app",
+        "rootDir": "src/client",
         "forceConsistentCasingInFileNames": true,
         "noImplicitReturns": true,
         "noImplicitThis": true,
@@ -18,7 +18,11 @@
         "suppressImplicitAnyIndexErrors": true,
         "noUnusedLocals": true,
         "skipLibCheck": true,
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "paths": {
+            "utils/*": ["src/client/utils/*"],
+            "components/*": ["src/client/components/*"]
+        }
     },
     "exclude": ["node_modules", "build", "scripts", "acceptance-tests", "webpack", "jest", "src/setupTests.ts"]
 }
