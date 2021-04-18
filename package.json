@@ -26,20 +26,10 @@
         "chai": "4.3.4",
         "chai-as-promised": "7.1.1",
         "chai-bignumber": "3.0.0",
-        "postcss": "8.2.10",
         "prettier": "2.2.1",
         "styled-components": "5.2.3",
-        "tailwindcss": "2.1.1",
         "ts-node": "9.1.1",
-        "twin.macro": "2.3.3",
         "typescript": "4.2.4",
-        "vite": "2.1.5",
-        "vite-plugin-babel-macros": "1.0.5"
-    },
-    "babelMacros": {
-        "twin": {
-            "config": "./tailwind.config.js",
-            "preset": "styled-components"
-        }
+        "vite": "2.1.5"
     }
 }
