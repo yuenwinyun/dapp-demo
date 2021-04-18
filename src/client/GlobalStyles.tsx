@@ -2,12 +2,8 @@ import React from "react";
 import { createGlobalStyle } from "styled-components";
 import { defineSafeFC } from "utils/defineSafeFC";
 
-const CustomStyles = createGlobalStyle``;
+const CommonStyles = createGlobalStyle``;
 
 export default defineSafeFC("GlobalStyles", () => {
-    return (
-        <React.Fragment>
-            <CustomStyles />
-        </React.Fragment>
-    );
+    return <CommonStyles />;
 });
