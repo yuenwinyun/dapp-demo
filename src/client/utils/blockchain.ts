@@ -1,20 +1,40 @@
-import Web3 from "web3";
+import React from "react";
+import { Web3Provider } from "@ethersproject/providers";
+import { InjectedConnector } from "@web3-react/injected-connector";
+import { useWeb3React } from "@web3-react/core";
+import type { ExternalProvider } from "@ethersproject/providers";
 
-// FIXME: type safety and env
-declare const window: any;
-
-export function loadWeb3() {
-    const provider = window.ethereum || window.web3?.currentProvider;
-    if (!provider) {
-        throw new ReferenceError("no ethereum found");
-    }
-    window.web3 = new Web3(provider);
+export function getLibrary(provider: ExternalProvider) {
+    const lib = new Web3Provider(provider);
+    lib.pollingInterval = 12000;
+    return lib;
 }
 
-export function loadBlockchainData() {
-    if (!window.web3) {
-        throw new ReferenceError("no web3 client found");
+export function getInjectedConnector() {
+    let injected: InjectedConnector | null = null;
+    if (!injected) {
+        injected = new InjectedConnector({});
     }
+    return injected;
+}
 
-    return window.web3.eth.getAccounts();
+export function useConnectBlockchain() {
+    const web3 = useWeb3React<Web3Provider>();
+
+    React.useEffect(() => {
+        if (!web3.active) {
+            web3.activate(getInjectedConnector());
+        }
+        return () => {
+            if (web3.active) {
+                web3.deactivate();
+            }
+        };
+    }, [web3.active]);
+}
+
+export function useTokenFarmContract() {
+    const web3 = useWeb3React<Web3Provider>();
+
+    console.log(web3);
 }

@@ -1,12 +1,14 @@
 import React from "react";
-import { defineSafeFC } from "utils/defineSafeFC";
-import { Layout } from "components/Layout";
-import { loadWeb3 } from "utils/blockchain";
+import { Layout } from "@/components/Layout";
+import { useConnectBlockchain } from "@/utils/blockchain";
+import { Demo } from "@/components/Demo";
 
 export const App = defineSafeFC("App", () => {
-    React.useEffect(() => {
-        loadWeb3();
-    }, []);
+    useConnectBlockchain();
 
-    return <Layout>TokenFarm App</Layout>;
+    return (
+        <Layout>
+            <Demo />
+        </Layout>
+    );
 });

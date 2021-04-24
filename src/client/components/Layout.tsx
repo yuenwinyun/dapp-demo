@@ -1,23 +1,23 @@
 import React from "react";
-import { defineSafeFC } from "utils/defineSafeFC";
-import { NavBar } from "./NavBar";
+import { Navbar } from "./Navbar";
 import { ErrorBoundary } from "./ErrorBoundary";
-import styled from "styled-components";
+import { styled } from "@twstyled/core";
 
-const Container = styled.div``;
+const Container = styled.div`
+    @tailwind bg-gray-100 h-screen flex flex-col;
+`;
 
-const Content = styled.main``;
-
-const Footer = styled.footer``;
+const Content = styled.main`
+    @tailwind flex flex-col items-center justify-center;
+`;
 
 export const Layout = defineSafeFC("Layout", ({ children }) => {
     return (
         <Container>
-            <NavBar />
+            <Navbar />
             <ErrorBoundary>
                 <Content>{children}</Content>
             </ErrorBoundary>
-            <Footer />
         </Container>
     );
 });

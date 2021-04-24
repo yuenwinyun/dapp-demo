@@ -20,9 +20,10 @@
         "skipLibCheck": true,
         "esModuleInterop": true,
         "paths": {
-            "utils/*": ["src/client/utils/*"],
-            "components/*": ["src/client/components/*"]
+            "@/utils/*": ["src/client/utils/*"],
+            "@/components/*": ["src/client/components/*"]
         }
     },
-    "exclude": ["node_modules", "build", "scripts", "acceptance-tests", "webpack", "jest", "src/setupTests.ts"]
+    "exclude": ["node_modules", "build", "scripts", "acceptance-tests", "webpack", "jest", "src/setupTests.ts"],
+    "include": ["src/client/**/*.ts", "src/client/**/*.tsx"]
 }
