@@ -1,25 +1,25 @@
 import { resolve } from "path";
 import { defineConfig } from "vite";
 import reactRefresh from "@vitejs/plugin-react-refresh";
-import autoImportDefineSafeFC from "./vite-plugin-auto-import-defineSafeFC";
 import twstyled from "vite-plugin-twstyled";
+import { uwin } from "vite-plugin-uwin";
 
 export default defineConfig({
     build: {
         outDir: resolve("./dist"),
         emptyOutDir: true,
         sourcemap: true,
-        minify: "terser",
+        minify: "esbuild",
     },
     root: resolve(__dirname, "./src/client"),
     publicDir: resolve(__dirname, "public"),
     plugins: [
         twstyled(),
         reactRefresh(),
-        autoImportDefineSafeFC({
+        uwin({
             exclude: /.*defineSafeFC.ts/g,
-            statements: {
-                defineSafeFC: 'import { defineSafeFC } from "@/utils/defineSafeFC"',
+            autoImportStatements: {
+                defineSafeFC: 'import { defineSafeFC } from "@/utils/defineSafeFC";',
             },
         }),
     ],

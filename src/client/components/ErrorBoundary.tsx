@@ -4,14 +4,16 @@ interface State {
     hasError: boolean;
 }
 
-export class ErrorBoundary extends React.PureComponent<{}, State> {
+interface Props {}
+
+export class ErrorBoundary extends React.PureComponent<Props, State> {
     static displayName = "ErrorBoundary";
 
     static getDerivedStateFromError() {
         return { hasError: true };
     }
 
-    constructor(props: {}) {
+    constructor(props: Props) {
         super(props);
         this.state = {
             hasError: false,

@@ -9,7 +9,7 @@ const Container = styled.div`
 const UserIcon = styled.span`
     @tailwind inline-block;
 
-    background: url("./asset/user-icon.svg") no-repeat;
+    background: url("/asset/user-icon.svg") no-repeat;
     width: 1rem;
     height: 1rem;
 `;
@@ -19,7 +19,9 @@ const Username = styled.span`
 `;
 
 export const Account = defineSafeFC("Account", () => {
-    const { account } = useWeb3React();
+    const { account, chainId } = useWeb3React();
+
+    console.log({ chainId });
 
     return (
         <Container>

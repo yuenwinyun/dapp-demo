@@ -1,23 +1,21 @@
 import React from "react";
 import type { CardType } from "@/components/Demo/Card";
 
-const cardCollection: CardType[] = ["fries", "cheeseburger", "ice-cream", "pizza", "milkshake", "hotdog"];
+export const cardCollection: CardType[] = ["fries", "cheeseburger", "ice-cream", "pizza", "milkshake", "hotdog"];
 
-function shuffle<T>(arr: T[]): T[] {
+export function shuffle<T>(arr: T[]): T[] {
     const copy = [...arr];
     const N = arr.length;
-
     for (let i = 0; i < N; i++) {
         const randIndex = i + ((randomInt(N) % N) - i);
         const tmp = copy[i];
         copy[i] = copy[randIndex];
         copy[randIndex] = tmp;
     }
-
     return copy;
 }
 
-function randomInt(n: number) {
+export function randomInt(n: number) {
     return Math.floor(Math.random() * n);
 }
 

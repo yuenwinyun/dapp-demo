@@ -2,7 +2,6 @@ import React from "react";
 import { styled } from "@twstyled/core";
 import { motion } from "framer-motion";
 import { GameContext } from "@/utils/game";
-import { useTokenFarmContract } from "@/utils/blockchain";
 
 export type CardType = "fries" | "cheeseburger" | "ice-cream" | "pizza" | "milkshake" | "hotdog";
 
@@ -11,14 +10,12 @@ interface Props {
 }
 
 const Img = styled.img`
-    @tailwind shadow-lg;
+    @tailwind shadow-lg rounded-lg;
 `;
 
 export const Card = defineSafeFC<Props>("Card", ({ type }) => {
     const [cardType, setCardType] = React.useState<CardType | "blank">("blank");
     const { seen, setSeen } = React.useContext(GameContext);
-
-    useTokenFarmContract();
 
     React.useEffect(() => {
         if (seen.length >= 2) {

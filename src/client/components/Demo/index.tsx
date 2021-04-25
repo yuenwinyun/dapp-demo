@@ -3,6 +3,7 @@ import { styled } from "@twstyled/core";
 import { GameBoard } from "@/components/Demo/GameBoard";
 import { useGameCards, GameContext } from "@/utils/game";
 import { CardType } from "@/components/Demo/Card";
+import { useTokenFarmContract } from "@/utils/blockchain";
 
 const Container = styled.div`
     @tailwind my-20 mx-0 flex flex-col justify-center space-y-10;
@@ -15,6 +16,9 @@ const Button = styled.button`
 export const Demo = defineSafeFC("Demo", () => {
     const [cards, shuffleCards] = useGameCards();
     const [seen, setSeen] = React.useState<CardType[]>([]);
+    const contract = useTokenFarmContract();
+
+    console.log({ contract });
 
     const onRestart = () => {
         shuffleCards();
@@ -25,7 +29,9 @@ export const Demo = defineSafeFC("Demo", () => {
         <GameContext.Provider value={{ seen, setSeen }}>
             <Container>
                 <GameBoard cards={cards} />
-                <Button onClick={onRestart}>restart</Button>
+                <Button onClick={onRestart} x>
+                    restart
+                </Button>
             </Container>
         </GameContext.Provider>
     );
