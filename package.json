@@ -12,7 +12,7 @@
         "format": "prettier --config ./.prettierrc.yml --write '**/*.{ts,tsx,js,jsx,json,yml}'"
     },
     "dependencies": {
-        "@ethersproject/contracts": "^5.1.1",
+        "@ethersproject/contracts": "5.1.1",
         "@ethersproject/providers": "5.1.2",
         "@twstyled/core": "3.2.4",
         "@twstyled/theme": "3.2.4",
