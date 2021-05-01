@@ -1243,7 +1243,7 @@
   dependencies:
     "@ethersproject/bignumber" "^5.1.0"
 
-"@ethersproject/contracts@^5.1.1":
+"@ethersproject/contracts@5.1.1":
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/@ethersproject/contracts/-/contracts-5.1.1.tgz#c66cb6d618fcbd73e20a6b808e8f768b2b781d0b"
   integrity sha512-6WwktLJ0DFWU8pDkgH4IGttQHhQN4SnwKFu9h+QYVe48VGWtbDu4W8/q/7QA1u/HWlWMrKxqawPiZUJj0UMvOw==
@@ -2234,10 +2234,10 @@
   dependencies:
     cbor "^5.1.0"
 
-"@truffle/codec@^0.10.4":
-  version "0.10.4"
-  resolved "https://registry.yarnpkg.com/@truffle/codec/-/codec-0.10.4.tgz#b402a05462eaa140ce622942833361601af338f5"
-  integrity sha512-h8M8LKORuvtd3X+VdLH//Ql6HS9jw977vHGuRPYqlFkTvvdLEjzsg4PFnxMvusnus6AWtRclbAfSOiojT6JcMg==
+"@truffle/codec@^0.10.5":
+  version "0.10.5"
+  resolved "https://registry.yarnpkg.com/@truffle/codec/-/codec-0.10.5.tgz#f3caf5c5bcf351426564738ccc621e9ad3ecccdc"
+  integrity sha512-M8YR8hKxXTypgg8g8iD/rUkkWgS89/NqkLAR+ZpZIzO3PZ5pkiIysO2VkWeqJid8hVDM4O4Eswgt2ISrQzsVRg==
   dependencies:
     big.js "^5.2.2"
     bn.js "^5.1.3"
@@ -2275,10 +2275,10 @@
     crypto-js "^3.1.9-1"
     debug "^4.3.1"
 
-"@truffle/db@^0.5.8":
-  version "0.5.8"
-  resolved "https://registry.yarnpkg.com/@truffle/db/-/db-0.5.8.tgz#a9d6cf1bb26f9421c1584aae5bd58081f2aa2fa8"
-  integrity sha512-mf7oY/P4bxrzlJvJcw2g6eVpppr8Y1UOOTXkdXZPyVv+5VgsFWso6G7+acuBEI92gxBf/VxwTnS9u81n7IXZ2g==
+"@truffle/db@^0.5.9":
+  version "0.5.9"
+  resolved "https://registry.yarnpkg.com/@truffle/db/-/db-0.5.9.tgz#27062f8b52989b0c4ee967a216911c16f755d2a8"
+  integrity sha512-mktJQTY6IOkNqO+4i/LgX2lL+o1pFxRlgHpgBfILBY58tyhPMKWycEChX1d3Q/OHmtTCBuQencuINyORHKD94Q==
   dependencies:
     "@truffle/abi-utils" "^0.2.0"
     "@truffle/code-utils" "^1.2.26"
@@ -2300,14 +2300,14 @@
     pouchdb-find "^7.0.0"
     web3-utils "1.3.5"
 
-"@truffle/debugger@^8.0.22":
-  version "8.0.22"
-  resolved "https://registry.yarnpkg.com/@truffle/debugger/-/debugger-8.0.22.tgz#0501fd6f36e5c19ff2ea437138b612bb0276c2a3"
-  integrity sha512-4i3E1GFgNSQ4T8K5mQ34aXX4SWBoP8We39C6oPl+TOs/BEi/bdNsDvs1S4Za9k1HaWX14rJGWuzBt7sAR4zeFQ==
+"@truffle/debugger@^8.0.23":
+  version "8.0.23"
+  resolved "https://registry.yarnpkg.com/@truffle/debugger/-/debugger-8.0.23.tgz#660bd6f73c826980ea999de58fb6cc04ccf63f19"
+  integrity sha512-T3+hxS6EYAKS0wng4LjX0AsthkTcYjwS2JzjhH0JCFQyFGGtO+zONqe6pb2W6C/LqKeyzIQLIp8nVsNRZ3FAGQ==
   dependencies:
     "@truffle/abi-utils" "^0.2.0"
-    "@truffle/codec" "^0.10.4"
-    "@truffle/source-map-utils" "^1.3.38"
+    "@truffle/codec" "^0.10.5"
+    "@truffle/source-map-utils" "^1.3.39"
     bn.js "^5.1.3"
     debug "^4.3.1"
     json-pointer "^0.6.0"
@@ -2409,13 +2409,13 @@
     "@truffle/interface-adapter" "^0.4.22"
     web3 "1.3.5"
 
-"@truffle/source-map-utils@^1.3.38":
-  version "1.3.38"
-  resolved "https://registry.yarnpkg.com/@truffle/source-map-utils/-/source-map-utils-1.3.38.tgz#e5feb49c158f56585cfc88ff02dca499426ef717"
-  integrity sha512-MQNNGwpEoG7KbWJTHZdjsM+ZYSfiQ/o5loUdzHoig1OPkDZpfTIjd/N3ano9/ztQnlnwZeBG6xk8sxx5eM05mQ==
+"@truffle/source-map-utils@^1.3.39":
+  version "1.3.39"
+  resolved "https://registry.yarnpkg.com/@truffle/source-map-utils/-/source-map-utils-1.3.39.tgz#6c28f0c98f74f5244cce5f4a2ef2677554efbc62"
+  integrity sha512-wlYC0nb2pm265Byr4Dat6+vCaTVAlGagWgGfxoCDOH5k+z73p46vdJtgypzUeB5qcYFNa6f0T189BxKHWjCKng==
   dependencies:
     "@truffle/code-utils" "^1.2.26"
-    "@truffle/codec" "^0.10.4"
+    "@truffle/codec" "^0.10.5"
     debug "^4.3.1"
     json-pointer "^0.6.0"
     node-interval-tree "^1.3.3"
@@ -2620,7 +2620,7 @@
     "@types/node" "*"
     form-data "^3.0.0"
 
-"@types/node@*", "@types/node@14.14.41":
+"@types/node@*":
   version "14.14.41"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.41.tgz#d0b939d94c1d7bd53d04824af45f1139b8c45615"
   integrity sha512-dueRKfaJL4RTtSa7bWeTK1M+VH+Gns73oCgzvYfHZywRCoPSd8EkXBL0mZ9unPTveBn+D9phZBaxuzpwjWkW0g==
@@ -2634,6 +2634,11 @@
   version "11.11.6"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.11.6.tgz#df929d1bb2eee5afdda598a41930fe50b43eaa6a"
   integrity sha512-Exw4yUWMBXM3X+8oqzJNRqZSwUAaS4+7NdvHqQuFi/d+synz++xmX3QIf+BFqneW8N31R8Ky+sikfZUXq07ggQ==
+
+"@types/node@15.0.1":
+  version "15.0.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.0.1.tgz#ef34dea0881028d11398be5bf4e856743e3dc35a"
+  integrity sha512-TMkXt0Ck1y0KKsGr9gJtWGjttxlZnnvDtphxUOSd0bfaR6Q1jle+sPvrzNR1urqYTWMinoKvjKfXUGsumaO1PA==
 
 "@types/node@^10.1.0", "@types/node@^10.3.2":
   version "10.17.58"
@@ -2679,10 +2684,19 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@17.0.3":
+"@types/react@*":
   version "17.0.3"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.3.tgz#ba6e215368501ac3826951eef2904574c262cc79"
   integrity sha512-wYOUxIgs2HZZ0ACNiIayItyluADNbONl7kt8lkLjVK8IitMH5QMyAh75Fwhmo37r1m7L2JaFj03sIfxBVDvRAg==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/react@17.0.4":
+  version "17.0.4"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.4.tgz#a67c6f7a460d2660e950d9ccc1c2f18525c28220"
+  integrity sha512-onz2BqScSFMoTRdJUZUDD/7xrusM8hBA2Fktk2qgaTYPCgPvWnDEgkrOs8hhPUf2jfcIXkJ5yK6VfYormJS3Jw==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -2739,10 +2753,10 @@
   resolved "https://registry.yarnpkg.com/@types/zen-observable/-/zen-observable-0.8.2.tgz#808c9fa7e4517274ed555fa158f2de4b4f468e71"
   integrity sha512-HrCIVMLjE1MOozVoD86622S7aunluLb2PJdPfb3nYiEtohm8mIB/vyv0Fd37AdeMFrTUQXEunw78YloMA3Qilg==
 
-"@vitejs/plugin-react-refresh@1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@vitejs/plugin-react-refresh/-/plugin-react-refresh-1.3.2.tgz#c807c9c77694943b8e51f0a80babba6b078a3218"
-  integrity sha512-ujHk6wqY9MZh8PkjeQeeDHfds4teTD4mkG34++gVoQJgATO/Hpq7rcEYbFZ5Dyup3zlpe2jyu0gFuqznLnBUyQ==
+"@vitejs/plugin-react-refresh@1.3.3":
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/@vitejs/plugin-react-refresh/-/plugin-react-refresh-1.3.3.tgz#d5afb3e0463f368a8afadfdd7305fe5c5fe78a6a"
+  integrity sha512-J3KFwSQKrEK7fgOwTx0PMTlsolZORUch6BswjsM50q+Y7zSvX1ROIRn+tK2VE8SCvbYRHtzEKFlYW3vsWyTosQ==
   dependencies:
     "@babel/core" "^7.12.13"
     "@babel/plugin-transform-react-jsx-self" "^7.12.13"
@@ -6024,10 +6038,10 @@ forwarded@~0.1.2:
   resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.1.2.tgz#98c23dab1175657b8c0573e8ceccd91b0ff18c84"
   integrity sha1-mMI9qxF1ZXuMBXPozszZGw/xjIQ=
 
-framer-motion@4.1.9:
-  version "4.1.9"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-4.1.9.tgz#e4b237cb4cedb26002fb61fdbb64149a7cb3c422"
-  integrity sha512-s5vvzxlHk8sxvvFOr/jA7pON7elI4bvsqjmgeyvLZj0z58yzC94AGx09uB+wuzuWpKOoFwjgiD+ClcyMQ6WC9A==
+framer-motion@4.1.11:
+  version "4.1.11"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-4.1.11.tgz#022fdfe899bf644cab8d0f33ee35156e2d036391"
+  integrity sha512-7N67I8PUNH3OT0RTlNB672k5UiuWg5B17c+9Lc6BjICRo66gKeiq/Hy091lWCqNuSLEO59F9z39zxb3wMg6Tjg==
   dependencies:
     framesync "5.3.0"
     hey-listen "^1.0.8"
@@ -11481,17 +11495,17 @@ truffle-interface-adapter@^0.2.5:
     lodash "^4.17.13"
     web3 "1.2.1"
 
-truffle@5.3.3:
-  version "5.3.3"
-  resolved "https://registry.yarnpkg.com/truffle/-/truffle-5.3.3.tgz#ddfa7f83db08667492d4a0ba0a8f70b2d96e03c2"
-  integrity sha512-s1IVVnDAiQsS4NcAqbx12B62/ohjaP6/HUlfZceHmWJ+EEu4iZ5kUDbedKFU8FGxA8ak81S/+7Qh6AYu0yAETg==
+truffle@5.3.4:
+  version "5.3.4"
+  resolved "https://registry.yarnpkg.com/truffle/-/truffle-5.3.4.tgz#1e2c1f3c0850bf67b96d75447323d0fc31c66c30"
+  integrity sha512-pyItCKdVn79Yy7c/J4K34GK9aJzD6EAmKEFsphs9hYH4OfgQ8LMGFfY4bS1cYW41+DKgI+C/o5+dbIccA/SZ9g==
   dependencies:
-    "@truffle/debugger" "^8.0.22"
+    "@truffle/debugger" "^8.0.23"
     app-module-path "^2.2.0"
     mocha "8.1.2"
     original-require "^1.0.1"
   optionalDependencies:
-    "@truffle/db" "^0.5.8"
+    "@truffle/db" "^0.5.9"
     "@truffle/preserve-fs" "^0.2.1"
     "@truffle/preserve-to-buckets" "^0.2.1"
     "@truffle/preserve-to-filecoin" "^0.2.1"
@@ -11983,10 +11997,10 @@ vite-plugin-uwin@0.0.4:
   resolved "https://registry.yarnpkg.com/vite-plugin-uwin/-/vite-plugin-uwin-0.0.4.tgz#e5a315fa26b13c5fcf612cc6b721063944492237"
   integrity sha512-ILcI5HWL6hXB6nxJG4v6VksqYu+giy8Eq4MjbRVW1isEkTUAfCRZ/YgFt7w8TN28RmyvvAQXIr1SdNqxUMCKcg==
 
-vite@2.1.5:
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-2.1.5.tgz#4857da441c62f7982c83cbd5f42a00330f20c9c1"
-  integrity sha512-tYU5iaYeUgQYvK/CNNz3tiJ8vYqPWfCE9IQ7K0iuzYovWw7lzty7KRYGWwV3CQPh0NKxWjOczAqiJsCL0Xb+Og==
+vite@2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-2.2.3.tgz#1acbdfa56ac00e00e7ccb6988f63f130c2f99dbb"
+  integrity sha512-PtjyBL4GtACM+uT5q5hi2+AlMBbb6YI2b2bam6QI8ZdZt4FezseF0yZHQx0G+b3po9jIJ/GS5N9gc5Yq9Rue7g==
   dependencies:
     esbuild "^0.9.3"
     postcss "^8.2.1"
