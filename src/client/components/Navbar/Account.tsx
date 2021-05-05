@@ -21,8 +21,6 @@ const Username = styled.span`
 export const Account = defineSafeFC("Account", () => {
     const { account, chainId } = useWeb3React();
 
-    console.log({ chainId });
-
     return (
         <Container>
             <UserIcon />

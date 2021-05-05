@@ -15,5 +15,5 @@ module.exports = {
         },
     },
     contracts_directory: "./src/contracts/",
-    contracts_build_directory: "./src/contracts/abi",
+    contracts_build_directory: "./src/client/abi",
 };

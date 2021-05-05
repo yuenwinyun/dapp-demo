@@ -1,7 +1,7 @@
 import React from "react";
 import { Web3Provider } from "@ethersproject/providers";
 import { Contract } from "@ethersproject/contracts";
-import { TokenFarm } from "../../contracts";
+import { TokenFarm } from "../abi";
 import { InjectedConnector } from "@web3-react/injected-connector";
 import { useWeb3React } from "@web3-react/core";
 import type { ExternalProvider } from "@ethersproject/providers";
@@ -14,10 +14,12 @@ export function getLibrary(provider: ExternalProvider) {
 
 export function useInjectedConnector() {
     let injected: InjectedConnector | null = null;
-    if (!injected) {
-        injected = new InjectedConnector({});
-    }
-    return injected;
+    return (() => {
+        if (!injected) {
+            injected = new InjectedConnector({});
+        }
+        return injected;
+    })();
 }
 
 export function useConnectBlockchain() {
@@ -38,7 +40,8 @@ export function useConnectBlockchain() {
 
 export function useTokenFarmContract() {
     const { library } = useWeb3React<Web3Provider>();
+    console.log({ library });
     // FIXME
     let contract = new Contract("", TokenFarm);
-    return contract;
+    // return contract;
 }

@@ -6,7 +6,7 @@
         "target": "es5",
         "lib": ["es6", "dom", "esnext.asynciterable"],
         "sourceMap": true,
-        "allowJs": false,
+        "allowJs": true,
         "jsx": "react",
         "moduleResolution": "node",
         "rootDir": "src/client",
@@ -19,11 +19,19 @@
         "noUnusedLocals": true,
         "skipLibCheck": true,
         "esModuleInterop": true,
+        "resolveJsonModule": true,
         "paths": {
             "@/utils/*": ["src/client/utils/*"],
             "@/components/*": ["src/client/components/*"]
         }
     },
     "exclude": ["node_modules", "build", "scripts", "acceptance-tests", "webpack", "jest", "src/setupTests.ts"],
-    "include": ["src/client/**/*.ts", "src/client/**/*.tsx"]
+    "include": [
+        "src/client/**/*.ts",
+        "src/client/**/*.tsx",
+        "test/**/*.ts",
+        "test/**/*.tsx",
+        "test/**/*.js",
+        "test/**/*.jsx"
+    ]
 }
